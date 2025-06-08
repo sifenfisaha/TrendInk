@@ -39,3 +39,5 @@ interface AppState {
   };
   theme: "light" | "dark";
 }
+
+export type { AppState, Post, User };
