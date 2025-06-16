@@ -8,10 +8,7 @@ const MainNavigation: React.FC = () => {
     { path: "/", icon: <Home />, label: "Home" },
     { path: "/search", icon: <Search />, label: "Search" },
     { path: "/trending", icon: <Flame />, label: "Trending" },
-    // Conditional items
-    user
-      ? { path: "/profile", icon: <User />, label: "Profile" }
-      : { path: "/login", icon: <LogIn />, label: "Login" },
+    { path: "/auth", icon: user ? <User /> : <LogIn /> },
   ];
 
   return (

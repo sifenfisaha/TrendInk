@@ -10,7 +10,7 @@ interface AuthState {
 }
 
 const initialState: AuthState = {
-  user: null,
+  user: { id: "1", username: "sifen" },
   token: null,
   loading: false,
   error: null,
